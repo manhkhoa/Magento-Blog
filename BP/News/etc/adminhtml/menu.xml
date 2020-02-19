@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="BP_News::news" title="Banyan News" module="BP_News" sortOrder="110" resource="BP_News::news" parent="Magento_Backend::content"/>
+        <add id="BP_News::post" title="News" module="BP_News" sortOrder="10" action="news/post" resource="BP_News::post" parent="BP_News::news"/>
+        <add id="BP_News::configuration" title="Configuration" module="BP_News" sortOrder="1000" action="adminhtml/system_config/edit/section/banyan" resource="BP_News::configuration" parent="BP_News::news"/>
+    </menu>
+</config>
